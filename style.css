@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lilita+One&family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: rgb(64,78,237);
+    height: 72px;
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0 4rem;
+}
+
+.nav-items div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+
+.nav-items div a:hover{
+    text-decoration: underline;
+}
+
+.nav-btn{
+    color: rgb(44, 47, 51);
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: #fff;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.section1{
+    font-family: 'Open Sans';
+    background-color: rgb(64,78,237);
+    margin-top: -1px;
+}
+
+.section1-container{
+    max-width: 2600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.section1-container .img0{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    top: auto;
+}
+
+.section1-container .img1{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 12%;
+}
+
+.section1-container .img2{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 10%;
+}
+
+.section1-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 28px;
+    padding-right: 28px;
+    text-align: center;
+    gap: 20px;
+    padding-top: 120px;
+    position: absolute;
+    z-index: 10;
+}
+
+.section1-content .heading{
+    font-family: 'Rubik Mono One';
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    margin: 0;
+}
+
+.section1-content .subheading{
+    width: 40%;
+    color: rgb(255, 255, 255);
+    width: 70%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.download-btn{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-weight: 500;
+    z-index: 20;
+    padding: 20px;
+}
+
+.download-btn a.windows{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.download-btn a.windows:hover{
+    transform: scale(1.1);
+    color: #404EED;
+}
+
+.download-btn a.browser{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.download-btn a.browser:hover{
+    transform: scale(1.1);
+}
+
+.section2, .section4{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 144px;
+    padding-bottom: 144px;
+    padding-left: 38px;
+    padding-right: 38px;
+    align-items: center;
+}
+
+.section2-container, .section3-container, .section4-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.section2-left, .section3-left, .section4-left{
+    width: 50%;
+}
+
+.section2-left img, .section3-right img, .section4-left img{
+   max-width: 100%;
+}
+
+.section2-right, .section3-left, .section4-right{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.section2-heading, .section3-left-heading, .section4-heading{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 44px;
+    margin-top: 1.25rem;
+}
+
+.section2-subheading, .section4-subheading{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 24px;
+}
+
+.section3{
+    display: flex;
+    background-color: #f6f6f6;
+    padding-left: 28px;
+    padding-right: 28px;
+    height: 670px;
+}
+
+.section3-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section3-left{
+    width: 50%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.section3-right img{
+    width: 100%;
+}
+
+.section3 p{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 24px;
+    font-style: n;
+}
+
+.section5{
+    background-color: #f6f6f6;
+}
+
+.section5-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 106px;
+    padding-bottom: 106px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.section5-heading{
+    font-family: 'Rubik Mono One';
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    line-height: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.section5-subheading{
+    text-align: center;
+    margin-top: 34px;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section5-img{
+    width: 100%;
+}
+
+.journey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.journey-img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.journey-text{
+    position: absolute;
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38px;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.section5-btn-container{
+    margin-top: 55px;
+}
+
+.section5-btn{
+    background-color: #404EED;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 9999px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.section5-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #23272a;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #5865f2;
+    padding-bottom: 40px;
+    padding-top: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-section1{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-section1-left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-section1-left h1{
+    font-family: 'Rubik Mono One';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.socials a{
+    color: white;
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+
+.socials{
+    display: flex;
+    gap: 28px;
+}
+
+.socials a:hover{
+    transform: scale(1.2);
+}
+
+.footer-section1-right{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* 
+.right1{
+    width: 50%;
+} */
+
+.right-heading{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    gap: 10px;
+    font-weight: 400;
+    font-family: 'Open sans';
+    list-style: none;
+}
+
+.right-content li a{
+    color: white;
+    text-decoration: none;
+}
+
+.right-content li a:hover{
+    text-decoration: underline;
+}
+
+/* .footer-section2{
+    padding-top: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+
+.footer-section2-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-signup .footer-btn{
+    color: white;
+    font-family: 'Open Sans';
+    background-color: #5865f2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.footer-signup .footer-btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+hr{
+    display: flex;
+}
+
+.download-btn a.mobile{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.download-btn a.mobile:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 830px) {
+    .nav-items{
+        display: none;
+    }
+
+    .footer-section2-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 647px){
+    .download-btn a.windows{
+        display: none;
+    }
+    .download-btn a.browser{
+        display: none;
+    }
+    .download-btn a.mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 414px){
+    .section1-content .heading{
+        font-size: 46px;
+    }
+
+    .section1-content .subheading{
+        font-size: 15px;
+    }
+
+    .download-btn a.mobile{
+        display: block;
+    }
+
+    .section2-container, .section3-container, .section4-container{
+        flex-direction: column;
+    }
+
+    .section2-left, .section2-right, .section3-left, .section3-right, .section4-left, .section4-right{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section5-btn{
+        display: none;
+    }
+
+    .footer-section1-right{
+        display: none;
+    }
+
+
+}
+
+/* .mobile{
+    display: none;
+} */
+
